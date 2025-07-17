@@ -1,0 +1,163 @@
+:root {
+   --primary-color: #08090A;
+   --secondary-color: #A7A2A9;
+   --accent1-color: #F4F7F5;
+   --accent2-color: #575A5E;
+}
+
+
+header {
+   background-color: var(--secondary-color);
+   color: black;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+}
+
+
+header nav {
+   background-color: var(--accent2-color);
+   width: 90%;
+   padding: 20px;
+   display: flex;
+   justify-content: space-around;
+   font-size: 25px;
+}
+
+
+h1, h2 {
+   font-family: "Lora", sans-serif;
+   /* display: flex; */
+}
+
+header a:visited {
+    color: var(--accent1-color);
+}
+
+header a:link {
+   background-color: transparent;
+   color: var(--accent1-color);
+   text-decoration: none;
+}
+
+a:link {
+    color: black;
+} 
+
+a:visited {
+   background-color: transparent;
+   color: #301934;
+   text-decoration: none;
+}
+
+header a:hover {
+    color: #08090A;
+}
+
+a:hover {
+   background-color: transparent;
+   color: black;
+   text-decoration: none;
+}
+
+
+main {
+   width: 80%;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   /* justify-content: center; */
+   margin: auto;
+}
+
+
+.card {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: flex-start;
+   align-items: flex-start; */
+   background-color: lightgrey ;
+   margin: 2px;
+   border-radius: 20px;
+   /* display: grid; */
+}
+
+
+.card p, h3, a {
+   margin: 20px;
+  
+}
+
+
+.card div{
+   display: grid;
+   /* background-color: var(--secondary-color);  */
+   /* margin: auto; */
+   width: 100%;
+   justify-content: center;
+   border-radius: 20px;
+}
+
+
+/* .card a {
+   margin: ;
+} */
+
+
+#profile {
+   width: 250px;
+   margin: 5px;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(5, 100px); 
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.item1 {
+  grid-column: 1 / span 2; 
+  grid-row: 1 / span 2;
+}
+
+.item2 {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1; 
+}
+
+.item3 {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 2;
+}
+
+.item4 {
+  grid-column: 2 / span 2;
+  grid-row: 4 / span 2;
+}
+
+#profile {
+    grid-column: 3 / span 1; 
+    grid-row: 1 / span 2;
+    width: 250px;
+    margin: 5px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
